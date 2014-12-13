@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tasktable"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launchernew"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.My_actionbar" >
+        <activity
+            android:name="com.example.tasktable.main.Main"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.tasktable.main.ServMain"
+            android:icon="@drawable/ic_launchernew"
+            android:label="@string/app_name" >
+        </service>
+
+        <receiver android:name="com.example.tasktable.main.Receiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.example.tasktable.monday.Monday"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.monday.MondayActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.monday.Monday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.monday.Monday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.monday.MondayActivityEdit"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.monday.Monday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.monday.Monday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.monday.TaskAdapter"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.tuesday.Tuesday"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.tuesday.TuesdayActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.tuesday.Tuesday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.tuesday.Tuesday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.tuesday.TuesdayActivityEdit"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.tuesday.Tuesday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.tuesday.Tuesday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.wednesday.Wednesday"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.wednesday.WednesdayActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.wednesday.Wednesday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.wednesday.Wednesday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.wednesday.WednesdayActivityEdit"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.wednesday.Wednesday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.wednesday.Wednesday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.thursday.Thursday"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.thursday.ThursdayActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.thursday.Thursday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.thursday.Thursday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.thursday.ThursdayActivityEdit"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.thursday.Thursday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.thursday.Thursday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.friday.Friday"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.friday.FridayActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.friday.Friday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.friday.Friday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.friday.FridayActivityEdit"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.friday.Friday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.friday.Friday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.saturday.Saturday"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.saturday.SaturdayActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.saturday.Saturday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.saturday.Saturday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.saturday.SaturdayActivityEdit"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.saturday.Saturday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.saturday.Saturday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.sunday.Sunday"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="com.example.tasktable.sunday.SundayActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.sunday.Sunday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.saturday.Saturday" />
+        </activity>
+        <activity
+            android:name="com.example.tasktable.sunday.SundayActivityEdit"
+            android:label="@string/app_name"
+            android:parentActivityName="com.example.tasktable.sunday.Sunday"
+            android:theme="@style/Theme.Edit_actionbar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tasktable.saturday.Saturday" />
+        </activity>
+    </application>
+
+</manifest>

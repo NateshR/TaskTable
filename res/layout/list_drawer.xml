@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/etList1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="58sp"
+        android:minHeight="54sp"
+        android:paddingLeft="9dp"
+        android:paddingTop="1dp"
+        android:textColor="#515151"
+        android:textSize="18sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="LINE"
+        android:src="@drawable/dotted1" />
+
+</LinearLayout>

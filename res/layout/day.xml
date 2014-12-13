@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6d6d6"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editMonday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:hint="Notes"
+        android:inputType="textMultiLine|textCapSentences"
+        android:textColorHint="#2d2d2d" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:contentDescription="DOT"
+        android:src="@drawable/dotted" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="Task to do"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#2d2d2d" />
+
+</LinearLayout>
